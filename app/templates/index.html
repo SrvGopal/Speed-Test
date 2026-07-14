@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Speed Test</title>
+  <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+  <main class="container">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Network Diagnostic</p>
+        <h1>Internet Speed Test</h1>
+        <p class="sub">Measure ping, jitter, download, and upload speed in your browser.</p>
+      </div>
+      <button id="startBtn" class="start-btn">Start Test</button>
+    </section>
+
+    <section class="status-card">
+      <div>
+        <p class="label">Current phase</p>
+        <h2 id="phaseText">Idle</h2>
+      </div>
+      <div>
+        <p class="label">Server</p>
+        <h2>Mumbai / Render</h2>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="metric">
+        <p class="label">Ping</p>
+        <h3><span id="pingValue">--</span> <small>ms</small></h3>
+      </article>
+      <article class="metric">
+        <p class="label">Jitter</p>
+        <h3><span id="jitterValue">--</span> <small>ms</small></h3>
+      </article>
+      <article class="metric">
+        <p class="label">Download</p>
+        <h3><span id="downloadValue">--</span> <small>Mbps</small></h3>
+      </article>
+      <article class="metric">
+        <p class="label">Upload</p>
+        <h3><span id="uploadValue">--</span> <small>Mbps</small></h3>
+      </article>
+    </section>
+
+    <section class="details">
+      <p id="detailText">Click start to begin the test.</p>
+    </section>
+  </main>
+  <script src="/static/js/app.js"></script>
+</body>
+</html>
